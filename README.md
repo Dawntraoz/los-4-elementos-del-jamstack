@@ -2,6 +2,8 @@
 
 > To get better understanding of this project and how it works, read our [Add a headless CMS to Nuxt in 5 minutes](https://www.storyblok.com/tp/headless-cms-nuxtjs) article.
 
+Copy-paste .env.example and rename to .env with your own Token.
+
 ## Resources
 
 Visit our technology [Nuxt Technology Hub](https://www.storyblok.com/tc/nuxtjs) for more tutorials and videos how to use Storyblok together with Vue.js and Nuxt.
