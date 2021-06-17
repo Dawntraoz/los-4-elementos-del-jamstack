@@ -33,17 +33,24 @@ export default {
       console.error(error)
     })
   },
-  asyncData (context) {
+  async asyncData (context) {
+
+    if(!context.store.state.layout) {
+      await context.store.dispatch('updateLayout')
+    }
+
     // We are getting only the draft version of the content in this example.
     // In real world project you should ask for correct version of the content
     // according to the environment you are deploying to.
     // const version = context.query._storyblok || context.isDev ? 'draft' : 'published'
 
+    const version =
+          context.query._storyblok || context.isDev ? 'draft' : 'published'
     const fullSlug = (context.route.path == '/' || context.route.path == '') ? 'home' : context.route.path
 
     // Load the JSON from the API - loadig the home content (index page)
     return context.app.$storyapi.get(`cdn/stories/${fullSlug}`, {
-      version: 'draft'
+      version
     }).then((res) => {
       return res.data
     }).catch((res) => {
