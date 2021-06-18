@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style scoped>
-.nuxt-link-active {
+.nuxt-link-exact-active {
   @apply border-b-2 border-indigo-500;
 }
 </style>
