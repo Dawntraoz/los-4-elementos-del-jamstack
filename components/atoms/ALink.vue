@@ -23,7 +23,8 @@ export default {
       return this.blok.url.linktype === 'url'
     },
     urlLink ()  {
-      return this.blok.url.url || '/'
+      const cachedUrl = this.blok.url.cached_url
+      return cachedUrl === 'home' ? '/' : this.blok.url.cached_url
     }
   }
 }
