@@ -1,9 +1,10 @@
 <template>
-  <div
+  <article
     v-editable="blok"
-    class="py-8 mb-6 text-5xl font-bold text-center">
-    {{ blok.headline }}
-  </div>
+    class="border border-indigo-300 bg-white p-6"
+  >
+    <a-heading tag="h2" :content="blok.name" class="uppercase" />
+  </article>
 </template>
 
 <script>
