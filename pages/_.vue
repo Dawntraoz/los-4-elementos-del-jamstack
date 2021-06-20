@@ -29,8 +29,6 @@ export default {
           })
         }
       })
-    }, (error) => {
-      console.error(error)
     })
   },
   async asyncData (context) {

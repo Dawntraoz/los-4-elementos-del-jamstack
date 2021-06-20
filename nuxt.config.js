@@ -73,7 +73,7 @@ export default {
 
   generate: {
     routes(callback) {
-      const routesToIgnore = ['home']
+      const routesToIgnore = ['home', 'layout']
       let cache_version = 0
       let routes = ['/']
   

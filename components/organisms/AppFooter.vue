@@ -1,5 +1,5 @@
 <template>
-  <footer v-if="footerLinks" class="bg-indigo-900 text-white py-8">
+  <footer v-if="footerLinks" class="bg-indigo-900 text-white py-8 md:py-12">
     <div class="container mx-auto px-4 flex flex-wrap">
       <component
         v-for="column in footerLinks"
