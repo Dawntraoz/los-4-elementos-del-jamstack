@@ -1,23 +1,22 @@
-# Nuxt Storyblok Boilerplate
+# Los 4 elementos del Jamstack
 
-> To get better understanding of this project and how it works, read our [Add a headless CMS to Nuxt in 5 minutes](https://www.storyblok.com/tp/headless-cms-nuxtjs) article.
+Proyecto demostración de las buenas prácticas del Jamstack usando Nuxt como generador de sitios estáticos, Storyblok como Headless CMS, Netlify como Hosting y Atomic Design como metodología de trabajo.
 
-Copy-paste .env.example and rename to .env with your own Token.
+Demo: [Los 4 elementos del Jamstack](https://los-4-elementos-jamstack.dawntraoz.com)
 
-## Resources
+> Para entender como funcionan Storyblok y Nuxt juntos os recomiendo echar un vistazo al artículo [Add a headless CMS to Nuxt in 5 minutes](https://www.storyblok.com/tp/headless-cms-nuxtjs).
 
-Visit our technology [Nuxt Technology Hub](https://www.storyblok.com/tc/nuxtjs) for more tutorials and videos how to use Storyblok together with Vue.js and Nuxt.
+## Primeros pasos
 
-## Configuration Steps
+1. Crea un nuevo espacio en Storyblok.
+2. Ve a Settings > API-Keys y copia el Preview Token en la variable STORYBLOK_TOKEN del archivo .env.example.
+3. Renombra el archivo .env.example a .env.
 
-1. Create new Space in Storyblok
-2. Obtain Preview Token from the Settings of the Space.
-3. Replace the `accessToken` value in `nuxt.config.js` file with your Preview Token.
-4. Your Nuxt.js project can be started and will consume data from your Storyblok Space.
+> Para saber como montar un sitio multi idioma con Storyblok y Nuxt.js, tienes este artículo [The Complete Guide to Build a Full Blown Multilanguage Website with Nuxt.js](https://www.storyblok.com/tp/nuxt-js-multilanguage-website-tutorial).
 
-> For more advanced article on how to build multilanguage website with Storyblok and Nuxt.js, check our [The Complete Guide to Build a Full Blown Multilanguage Website with Nuxt.js](https://www.storyblok.com/tp/nuxt-js-multilanguage-website-tutorial).
+## Para montar el proyecto
 
-## Build Setup
+[Guía para desarrollar Los 4 elementos del Jamstack desde cero](https://los-4-elementos-jamstack.dawntraoz.com/docs)
 
 ```bash
 # install dependencies
@@ -34,4 +33,8 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Recursos
+
+En el apartado [Nuxt Technology Hub](https://www.storyblok.com/tc/nuxtjs) de Storyblok podrás encontrar más tutoriales y vídeos de cómo usar Storyblok con Vue y Nuxt.
+
+Si necesitas resolver dudas sobre Nuxt en concreto, echa un vistazo a la [documentación de Nuxt](https://nuxtjs.org).
