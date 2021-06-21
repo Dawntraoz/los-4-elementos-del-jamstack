@@ -14,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Proyecto demostración de las buenas prácticas del Jamstack usando Nuxt como generador de sitios estáticos, Storyblok como Headless CMS, Netlify como Hosting y Atomic Design como metodología de trabajo.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

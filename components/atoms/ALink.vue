@@ -5,6 +5,8 @@
     :target="externalLink && '_blank'"
     :href="externalLink && urlLink"
     :to="!externalLink && urlLink"
+    class="cursor-pointer"
+    :rel="externalLink && 'noopener noreferrer'"
   >
     {{ blok.name }}
   </component>
