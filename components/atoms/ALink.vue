@@ -26,7 +26,7 @@ export default {
     },
     urlLink ()  {
       const cachedUrl = this.blok.url.cached_url
-      return cachedUrl === 'home' ? '/' : this.blok.url.cached_url
+      return '/' + cachedUrl === 'home' ? '' : cachedUrl
     }
   }
 }
